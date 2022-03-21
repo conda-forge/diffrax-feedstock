@@ -1,5 +1,5 @@
 {% set name = "diffrax" %}
-{% set version = "0.0.4" %}
+{% set version = "0.0.5" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 0bb0b88e08f3e775b27cfac932bdc404dea6b636d821c49711a8ec9dc2cf157b
+  sha256: 006ae17286deec95541ec2ffc0506c101e62dc1932296e52948d2556ae2c5a28
 
 build:
   noarch: python
@@ -35,7 +35,7 @@ test:
 
 about:
   home: https://github.com/patrick-kidger/diffrax
-  summary: 'Numerical differential equation solvers in JAX.'
+  summary: Numerical differential equation solvers in JAX.
   description: |
     Numerical differential equation solvers in JAX. Autodifferentiable and GPU-capable.
   license: Apache-2.0
