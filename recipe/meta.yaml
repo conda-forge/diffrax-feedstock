@@ -1,5 +1,5 @@
 {% set name = "diffrax" %}
-{% set version = "0.2.1" %}
+{% set version = "0.2.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 07806ad221d7c381da336e2689c88805bbce777408045a64046fe0924d2f67de
+  sha256: f2147d78aa9ccae613a67df6f52b4473aabdb64d0566275c2dc4c3dbca30f181
 
 build:
   noarch: python
@@ -22,7 +22,7 @@ requirements:
   run:
     - python >=3.7
     - jax >=0.3.4
-    - equinox >=0.5.4
+    - equinox >=0.9.1
 
 test:
   imports:
