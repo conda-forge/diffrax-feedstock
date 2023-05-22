@@ -1,5 +1,5 @@
 {% set name = "diffrax" %}
-{% set version = "0.3.1" %}
+{% set version = "0.4.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: f0f49a1b38fcb0405a373782a3542fc54356bd2ccd98a3fcf3bdec6f78dd43d0
+  sha256: 4db95c6f3efcb3d7a90ef461d2485129efac056732cd09c807858db256bfede1
 
 build:
   noarch: python
