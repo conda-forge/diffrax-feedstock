@@ -17,8 +17,8 @@ build:
 requirements:
   host:
     - python >=3.9
+    - hatchling
     - pip
-    - setuptools
   run:
     - python >=3.9
     - equinox >=0.11.2
