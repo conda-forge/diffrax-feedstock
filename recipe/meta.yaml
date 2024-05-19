@@ -1,5 +1,5 @@
 {% set name = "diffrax" %}
-{% set version = "0.5.0" %}
+{% set version = "0.5.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 2e66701b545798818af34a9132887b354c93b5b47e133c9986e23a7cf600a937
+  sha256: 8541451e4713f0f0b3e276b076ddddc4902148b624b6ab4ddd4726c4984d6489
 
 build:
   noarch: python
@@ -22,10 +22,11 @@ requirements:
   run:
     - python >=3.9
     - equinox >=0.11.2
-    - jax >=0.4.18
+    - jax >=0.4.23
     - jaxtyping >=0.2.24
-    - lineax >=0.0.4
-    - optimistix >=0.0.6
+    - lineax >=0.0.5
+    - optimistix >=0.0.7
+    - typeguard ~=2.13.3
     - typing_extensions >=4.5.0
 
 test:
