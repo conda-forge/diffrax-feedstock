@@ -1,5 +1,5 @@
 {% set name = "diffrax" %}
-{% set version = "0.6.2" %}
+{% set version = "0.7.0" %}
 {% set python_min = "3.10" %}
 
 
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 50fde010792a2e9d6105fdf2242e024dd779da27c618b56b92c244cd842bd3d1
+  sha256: f3bcc578cd92a9ca86fc6f5a54c1de76c1ba62f74de69b56002624bf205316f1
 
 build:
   noarch: python
@@ -29,7 +29,8 @@ requirements:
     - typeguard ==2.13.3
     - equinox >=0.11.10
     - lineax >=0.0.5
-    - optimistix >=0.0.7
+    - optimistix >=0.0.10
+    - wadler-lindig >=0.1.1
 
 test:
   imports:
