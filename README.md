@@ -15,7 +15,6 @@ Documentation: https://docs.kidger.site/diffrax/
 
 Numerical differential equation solvers in JAX. Autodifferentiable and GPU-capable.
 
-
 Current build status
 ====================
 
