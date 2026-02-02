@@ -3,8 +3,8 @@ schema_version: 1
 
 context:
   name: diffrax
-  version: 0.7.0
-  python_min: 3.10
+  version: "0.7.1"
+  python_min: "3.11"
 
 package:
   name: ${{ name|lower }}
@@ -12,10 +12,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name }}-${{ version }}.tar.gz
-  sha256: f3bcc578cd92a9ca86fc6f5a54c1de76c1ba62f74de69b56002624bf205316f1
+  sha256: 909f3df6a88de6f06040031a58baf01ed80d375388c0dff55511bfaaefc33f02
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv
 
